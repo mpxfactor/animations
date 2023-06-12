@@ -1,0 +1,133 @@
+*,
+::after,
+::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+
+	font-family: "Times New Roman", Times, sans-serif;
+}
+
+h1 > span {
+	padding: 0;
+	margin: -3px;
+}
+
+nav {
+	padding-block: 1rem;
+
+	text-align: center;
+}
+
+nav > h1 {
+	overflow: hidden;
+	font-weight: 400;
+}
+
+nav > h1 > span {
+	display: inline-flex;
+}
+
+h1 > span {
+	transform: translateY(3rem);
+	animation: letterAnimations 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#letter1 {
+	animation-delay: 0.25s;
+}
+#letter2 {
+	animation-delay: 0.5s;
+}
+#letter3 {
+	animation-delay: 0.75s;
+}
+#letter4 {
+	animation-delay: 1s;
+}
+#letter5 {
+	animation-delay: 1.25s;
+}
+#letter6 {
+	animation-delay: 1.5s;
+}
+#letter7 {
+	animation-delay: 1.75s;
+}
+#letter8 {
+	animation-delay: 2s;
+}
+#letter9 {
+	animation-delay: 2.25s;
+}
+
+@keyframes letterAnimations {
+	0% {
+	}
+	100% {
+		transform: translateY(0rem);
+	}
+}
+
+.word1 {
+	display: inline-flex;
+	overflow: hidden;
+	transform: translateX(100%);
+	animation: word1Animations 0.5s ease-in-out infinite;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.word2 {
+	display: inline-flex;
+	overflow: hidden;
+	transform: translateY(100%);
+	animation: word3Animations 0.5s ease-in-out infinite;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.word3 {
+	display: inline-flex;
+	overflow: hidden;
+	transform: translateX(-100%);
+	animation: word3Animations 0.5s ease-in-out infinite;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes word1Animations {
+	0% {
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+@keyframes word3Animations {
+	0% {
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+@keyframes word2Animations {
+	0% {
+	}
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+main > div {
+	font-size: 2rem;
+
+	text-align: center;
+}
